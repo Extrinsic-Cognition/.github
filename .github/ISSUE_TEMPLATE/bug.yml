@@ -1,0 +1,35 @@
+name: Something is broken
+description: Report a problem with the app, a plugin, a website, or a tool.
+type: Bug
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks. Plain words are fine. Search open issues first in case someone already reported it. Never paste passwords, tokens or private recordings.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      placeholder: Studio froze when I exported a 40 minute OSRS recording.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it happen?
+      placeholder: "1. Open Studio\n2. Pick a recording\n3. ..."
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: App version, computer (Mac or Windows), game, or page link.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
